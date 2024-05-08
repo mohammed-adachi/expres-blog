@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog</title>
+    <!-- Stylesheets, meta tags, etc. -->
+</head>
+<body>
+    <div>
+        <%- include('../pages/search.ejs') %>
+<%- include('../partials/header.ejs') %>
+
+        <!-- Contenu de la vue spécifique -->
+        <%- body %>
+     <%-   include('../partials/footer.ejs') %>
+    </div>
+
+    
+
+    <!-- Scripts, CDN links, etc. -->
+</body>
+</html>

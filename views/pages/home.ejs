@@ -1,0 +1,37 @@
+<div >
+    <h1 class="author__heading">bonjour. je suis mohammed</h1>
+    <p class="author__body">developpeur web</p>
+   
+  </div>
+  <img src="../layouts/img/monphoto1.png" >
+  
+  
+  <section class="articles">
+    <h2 class="articles__heading">Latest Posts</h2>
+  
+    <ul class="article-ul">
+      
+      <% data.forEach(post => { %>
+        <li>
+            <a href="/post/<%= post._id %>"> <!-- Assurez-vous que vous avez un champ _id dans vos données -->
+                <span><%- post.title %></span>
+
+                <span class="article-list__date"><%- post.createdAt.toDateString() %></span> <!-- Affichez la date de création de l'article -->
+            </a>
+            
+        </li>
+    <% }) %>
+     
+    </ul>
+  <%  if (nextPage !==null) { %>
+    <a href="/?page=<%= nextPage %>">Page suivante</a>
+<% } %>
+
+    
+   
+  
+    
+  
+
+  
+  </section>
