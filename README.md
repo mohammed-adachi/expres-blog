@@ -1,3 +1,4 @@
-recupirer //-- docker-compose build 
-            -- docker-compose up
+recupirer
+ docker-compose build 
+ docker-compose up
             
